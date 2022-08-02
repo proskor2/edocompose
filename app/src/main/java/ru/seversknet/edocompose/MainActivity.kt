@@ -18,6 +18,7 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 import ru.seversknet.edocompose.ui.screens.listscreen
+import ru.seversknet.edocompose.ui.screens.startscreen
 import ru.seversknet.edocompose.ui.theme.EdocomposeTheme
 import ru.seversknet.edosevadm.api.ApiTasks
 import ru.seversknet.edosevadm.models.Tasks
@@ -26,7 +27,7 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-
+            startscreen()
         }
     }
 

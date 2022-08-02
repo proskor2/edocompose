@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">1С:ЭДО Северск</string>
-    <string name="name_edo">Администрация ЗАТО Северск 1С: Документооборот</string>
+    <string name="name_edo">Администрация ЗАТО Северск \n 1С: Документооборот</string>
     <string name="login">Логин</string>
     <string name="password">Пароль</string>
     <string name="name">Имя</string>
@@ -33,6 +33,7 @@
     <string name="place">Местоположение</string>
     <string name="directories">Справочники</string>
     <string name="no_events">Мероприятия отсутствуют</string>
+    <string name="no_docs">Документы отсутствуют</string>
     <string name="show_only_favorite">Показывать только избранных</string>
     <string name="doc_on_show">Документов на рассмотрении: </string>
     <string name="entrance_button">Войти</string>
@@ -42,4 +43,21 @@
     <string name="assignments">Поручения</string>
     <string name="sender">Отправитель</string>
     <string name="files">Файлы</string>
+    <string name="name_org">Наименование: </string>
+    <string name="inn_org">ИНН: </string>
+    <string name="ogrn_org">ОГРН: </string>
+    <string name="kpp_org">КПП: </string>
+    <string name="type">Тип: </string>
+    <string name="post_address">Почтовый адрес: </string>
+    <string name="site">Сайт: </string>
+    <string name="address_registration">Адрес регистрации: </string>
+    <string name="address_fact">Фактический адрес: </string>
+    <string name="urgently_docs">Срочные документы: </string>
+    <string name="urgently_docs_days">Считать документы со сроком исполнения</string>
+    <string name="days">дней</string>
+    <string name="docs_only_with_resolution">Рассмотреть только документы с проектами резолюций</string>
+    <string name="show_services">Отображать раздел Сервисы</string>
+    <string name="show_directories">Отображать раздел Справочники</string>
+    <string name="token_settings">Настройка токена</string>
+
 </resources>
