@@ -1,6 +1,7 @@
 <resources>
-    <string name="app_name">1С:ЭДО Северск</string>
-    <string name="name_edo">Администрация ЗАТО Северск \n 1С: Документооборот</string>
+    <string name="app_name">1С ЭДО Северск</string>
+    <string name="adm_sev">Администрация ЗАТО Северск</string>
+    <string name="edo">1С: Документооборот</string>
     <string name="login">Логин</string>
     <string name="password">Пароль</string>
     <string name="name">Имя</string>

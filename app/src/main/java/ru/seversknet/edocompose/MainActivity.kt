@@ -1,42 +1,21 @@
 package ru.seversknet.edocompose
 
-import android.content.Context
+
 import android.os.Bundle
-import android.util.Base64
-import android.util.Log
-import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material.MaterialTheme
-import androidx.compose.material.Surface
-import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
-import ru.seversknet.edocompose.ui.screens.listscreen
-import ru.seversknet.edocompose.ui.screens.startscreen
-import ru.seversknet.edocompose.ui.theme.EdocomposeTheme
-import ru.seversknet.edosevadm.api.ApiTasks
-import ru.seversknet.edosevadm.models.Tasks
+import ru.seversknet.edocompose.ui.screens.MainScreen
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            startscreen()
+            MainScreen()
         }
     }
-
-    override fun onResume() {
-        super.onResume()
-
-    }
 }
-
 
 @Preview(showBackground = true)
 @Composable
