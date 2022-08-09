@@ -6,11 +6,20 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.lifecycle.viewModelScope
+import ru.seversknet.edocompose.data.api.ApiService
+import ru.seversknet.edocompose.data.api.BaseURL
+import ru.seversknet.edocompose.data.models.TasksType
+import ru.seversknet.edocompose.data.repositories.tasksRepository
 import ru.seversknet.edocompose.ui.screens.MainScreen
+import ru.seversknet.edocompose.ui.viewmodels.tasksViewModel
+import ru.seversknet.edosevadm.api.ApiTasks
 
 class MainActivity : ComponentActivity() {
+    private var viewModel: tasksViewModel? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        viewModel?.getTasksList()
         setContent {
             MainScreen()
         }
@@ -23,26 +32,3 @@ fun DefaultPreview() {
 
 }
 
-///////////////////////////////////////////////////////////////////////////////////////////0LHQsNCx0LXQvdGL0YjQtdCy0LLQsjpxaGM4M3A=
-//// get review tasks
-//fun getReviewTasks() {
-//    val apiinterface =
-//        ApiTasks.create("http://192.168.64.86/edo/hs/").getTasks("Basic "+TasksList.token, "review")
-//    apiinterface.enqueue(object : Callback<List<Tasks>> {
-//        override fun onResponse(
-//            call: Call<List<Tasks>>,
-//            response: Response<List<Tasks>>?
-//        ) {
-//            val resp = response?.body()
-//            if (resp != null) {
-//                TasksList.listReview = resp
-//            }
-//
-//        }
-//
-//        override fun onFailure(call: Call<List<Tasks>>, t: Throwable) {
-//        Log.d("RF", t.message.toString())
-//        }
-//    })
-//}
-/////////////////////////////////////////////////////////////////////////////////////////////////////////

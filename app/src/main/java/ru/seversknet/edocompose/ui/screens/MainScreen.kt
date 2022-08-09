@@ -19,6 +19,7 @@ import ru.seversknet.edocompose.ui.theme.WhiteColor
 
 @Composable
 fun MainScreen() {
+
     var scaffoldState = rememberScaffoldState(rememberDrawerState(DrawerValue.Closed))
     val scope = rememberCoroutineScope()
     val navController = rememberNavController()
@@ -36,7 +37,6 @@ fun MainScreen() {
     ) {
 
     }
-
 }
 
 
