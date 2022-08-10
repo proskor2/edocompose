@@ -1,5 +1,6 @@
 package ru.seversknet.edocompose.data.api
 
+import com.google.gson.GsonBuilder
 import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -18,16 +19,14 @@ interface ApiService {
         @Query("type") type: String
     ): List<Tasks>
 
-    object RetrofitBuilder {
-        private val baseurl = BaseURL.baseurl.toString()
+    object AppConfig{
+        private const val BASE_URL = "http://192.168.64.86/edo/hs/"
 
-        private fun getRetrofit(): Retrofit{
-            return Retrofit.Builder()
-                .baseUrl(baseurl)
-                .addConverterFactory(GsonConverterFactory.create())
+        //create retrofit service
+        fun ApiService(): ApiService =
+            Retrofit.Builder().baseUrl(BASE_URL)
+                .addConverterFactory(GsonConverterFactory.create(GsonBuilder().create()))
                 .build()
-        }
-
-        val apiService = getRetrofit().create(ApiService::class.java)
+                .create(ApiService::class.java)
     }
 }
