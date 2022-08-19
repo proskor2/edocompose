@@ -19,7 +19,9 @@ import ru.seversknet.edocompose.R
 import ru.seversknet.edocompose.ui.theme.MainColor
 
 @Composable
-fun Drawer(scope: CoroutineScope, scaffoldState: ScaffoldState, navController: NavController) {
+fun Drawer(
+    scope: CoroutineScope, scaffoldState: ScaffoldState, navController: NavController
+    ) {
     val items = listOf(
         NavDrawerItems.Events,
         NavDrawerItems.Review

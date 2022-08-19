@@ -19,7 +19,7 @@ interface ApiService {
         @Query("type") type: String
     ): List<Tasks>
 
-    object AppConfig{
+    object AppConfig {
         private const val BASE_URL = "http://192.168.64.86/edo/hs/"
 
         //create retrofit service

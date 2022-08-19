@@ -95,7 +95,7 @@ fun StartScreen() {
                 })
             Spacer(modifier = Modifier.padding(10.dp))
             Button(
-                onClick = {  },
+                onClick = { },
                 modifier = Modifier
                     .size(250.dp, 50.dp),
                 colors = ButtonDefaults.buttonColors(MainColor),
